@@ -1,0 +1,54 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    background-color: lightblue;
+}
+
+button {
+    background-color: blue;
+    color: white;
+    border: 0px solid white;
+    border-radius: 20px;
+    min-height: 4vh;
+    min-width: 14vw;
+    position: absolute;
+    top: 10vh;
+    left: 43vw;
+}
+
+#flex-container {
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: space-around;
+    align-items: center;
+    position: absolute;
+    width: 90vw;
+    left: 5vw;
+    top: 25vh;
+}
+
+.option {
+    display: flex;
+    flex-flow: column nowrap;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.option > img {
+    aspect-ratio: maintain;
+    max-height: 60vh;
+    max-width: 25vw;
+    margin-bottom: 5vh;
+}
+
+.option.active > img:hover {
+    border: 5px white solid;
+    border-radius: 5px;
+    box-shadow: 1px 1px 7px #888888;
+}
+
+.option > label {
+    font-size: 200%;
+}
